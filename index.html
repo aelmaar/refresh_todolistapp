@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/3b0573f22a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo List app</title>
+  </head>
+  <body onload="onLoad();">
+    <!-- Todo list app -->
+    <div class="todo_container">
+      <h1>TODO LIST APP</h1>
+      <!-- add tasks -->
+      <form onsubmit="addTask(event);">
+        <input type="text" id="text" />
+        <button type="submit" class="btnSubmit">Add</button>
+      </form>
+      <!-- tasks -->
+      <div id="tasks" class="list_container"></div>
+      <div class="clear_all_container">
+        <button class="btnClear" onclick="clearAll();">clear all</button>
+      </div>
+    </div>
+    <script src="todolistapp.js"></script>
+  </body>
+</html>

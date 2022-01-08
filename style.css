@@ -1,0 +1,88 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.todo_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 20px;
+  width: 30%;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  align-items: center;
+}
+input {
+  flex: 1;
+  height: 33px;
+  border-radius: 0;
+  border: none;
+  background: #d7dbd9;
+  outline: none;
+  transition: border 0.4s;
+}
+
+input:focus {
+  border-top: 1px solid rgba(255, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.7);
+  border-left: 1px solid rgba(255, 0, 0, 0.7);
+}
+
+.btnSubmit,.btnClear {
+  background: linear-gradient(
+    90deg,
+    rgba(7, 100, 111, 1) 0%,
+    rgba(170, 72, 72, 1) 0%,
+    rgba(210, 59, 59, 1) 100%
+  );
+  border: none;
+  color: white;
+  padding: 10px;
+  width: 100px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.list_container {
+  margin-top: 15px;
+}
+
+.tasks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 0 5px 0 5px;
+}
+
+.btns {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.fa-edit {
+  color: #32a85a;
+}
+
+.fa-trash {
+  color: rgba(255, 0, 0, 0.7);
+}
+
+.clear_all_container {
+  text-align: center;
+  margin-top: 20px;
+}
+
